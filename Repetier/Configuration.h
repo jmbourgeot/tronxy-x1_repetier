@@ -79,7 +79,7 @@
 #define EXT0_X_OFFSET 0
 #define EXT0_Y_OFFSET 0
 #define EXT0_Z_OFFSET 0
-#define EXT0_STEPS_PER_MM 90
+#define EXT0_STEPS_PER_MM 107
 #define EXT0_TEMPSENSOR_TYPE 5
 #define EXT0_TEMPSENSOR_PIN TEMP_0_PIN
 #define EXT0_HEATER_PIN HEATER_0_PIN
@@ -165,7 +165,7 @@
 
 // ############# Heated bed configuration ########################
 
-#define HAVE_HEATED_BED 0
+#define HAVE_HEATED_BED 1
 #define HEATED_BED_MAX_TEMP 120
 #define SKIP_M190_IF_WITHIN 3
 #define HEATED_BED_SENSOR_TYPE 1
@@ -334,8 +334,8 @@ It also can add a delay to wait for spindle to run on full speed.
 #define ZHOME_MIN_TEMPERATURE 0
 #define ZHOME_HEAT_ALL 0
 #define ZHOME_HEAT_HEIGHT 20
-#define ZHOME_X_POS 75
-#define ZHOME_Y_POS 75
+#define ZHOME_X_POS 0  //75
+#define ZHOME_Y_POS 0  //75
 #define ENABLE_BACKLASH_COMPENSATION 0
 #define X_BACKLASH 0
 #define Y_BACKLASH 0
@@ -420,8 +420,8 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 
 #define Z_PROBE_Z_OFFSET 0
 #define Z_PROBE_Z_OFFSET_MODE 0
-#define UI_BED_COATING 1
-#define FEATURE_Z_PROBE 1
+#define UI_BED_COATING 0
+#define FEATURE_Z_PROBE 0
 #define Z_PROBE_BED_DISTANCE 5
 #define Z_PROBE_PIN ORIG_Z_MIN_PIN
 #define Z_PROBE_PULLUP 1
@@ -479,7 +479,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define FEATURE_FAN2_CONTROL 0
 #define FEATURE_CONTROLLER 24
 #define ADC_KEYPAD_PIN 1
-#define LANGUAGE_EN_ACTIVE 1
+#define LANGUAGE_EN_ACTIVE 0
 #define LANGUAGE_DE_ACTIVE 0
 #define LANGUAGE_NL_ACTIVE 0
 #define LANGUAGE_PT_ACTIVE 0
@@ -487,11 +487,11 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define LANGUAGE_ES_ACTIVE 0
 #define LANGUAGE_FI_ACTIVE 0
 #define LANGUAGE_SE_ACTIVE 0
-#define LANGUAGE_FR_ACTIVE 0
+#define LANGUAGE_FR_ACTIVE 1
 #define LANGUAGE_CZ_ACTIVE 0
 #define LANGUAGE_PL_ACTIVE 0
 #define LANGUAGE_TR_ACTIVE 0
-#define UI_PRINTER_NAME "X1 TMRMN"
+#define UI_PRINTER_NAME "X1 de JM"
 #define UI_PRINTER_COMPANY "TronXY"
 #define UI_PAGES_DURATION 5000
 #define UI_ANIMATION 0
